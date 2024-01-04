@@ -1,38 +1,95 @@
-.App {
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #e0e8ff;
+  background: url('../images/pexels.webp');
+}
+
+main {
+  font-family: 'Roboto', sans-serif; 
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fff;
+  width: 90vw;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
 }
 
-.App-link {
-  color: #61dafb;
+main:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+h1 {
+  background-color: #1b1096;
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+h1:hover {
+  background-color: #0a065c;
+}
+
+
+.input-section {
+  width: 70%;
+  transition: background-color 0.3s ease; 
+}
+
+.input-section:hover {
+  background-color: #f8f8f8; 
+}
+
+
+.input-slider {
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-slider:hover {
+  background-color: #f2f2f2;
+}
+
+
+.output {
+  padding: 10px 5px;
+  border-radius: 20px;
+  background-color: #1b1096;
+  margin-top: 10px;
+  color: #fff;
+  transition: background-color 0.3s ease; 
+}
+
+.output:hover {
+  background-color: #0a065c;
+}
+
+
+.output-section {
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.output-section:hover {
+  background-color: #f8f8f8; 
 }
